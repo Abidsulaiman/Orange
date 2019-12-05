@@ -47,8 +47,8 @@
                 </div>
                 <div class="col-lg-6">
                     <ul class="top-right-menu">
-                        <li><a href="#"> <i class="fas fa-sign-in-alt mr-2"></i> Login</a></li>
-                        <li><a href="#"> <i class="fas fa-comment mr-2"></i> Support</a></li>
+                        <li><a href="login.html"> <i class="fas fa-sign-in-alt mr-2"></i> Login</a></li>
+                        <li><a href="contact.html"> <i class="fas fa-comment mr-2"></i> Support</a></li>
                     </ul>
                 </div>
             </div>
@@ -522,7 +522,10 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary w-100 mt-4">Send</button>
+                                <button type="submit" id="loginBtn" class="btn btn-primary w-100 mt-4">
+                                    <span class="label">Send</span>
+                                    <span class="loader fa fa-spinner fa-spin fa-pulse" style="display: none"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -576,6 +579,15 @@
     }, function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
     });
+
+
+
+    $('#loginBtn .label').show();
+
+    $('#loginBtn').click(function () {
+        $('#loginBtn .label').hide();
+        $('#loginBtn .loader').show();
+    })
 </script>
 </body>
 </html>

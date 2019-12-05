@@ -107,6 +107,18 @@ a, a:hover{
     background: var(--primary-color);
     border-color: var(--primary-color);
 }
+.btn-primary:hover, .btn-primary:focus{
+    outline: none;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    outline: none;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
 .form-control:focus {
     box-shadow: none;
 }
