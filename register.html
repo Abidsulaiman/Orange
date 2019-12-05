@@ -94,28 +94,40 @@
         <div class="row">
             <div class="col-lg-4 v-centered">
                 <div class="section-title">
-                    <h4 class="main-title">Get in <span class="text-primary">Touch With Us</span></h4>
+                    <h4 class="main-title">Register <span class="text-primary">Here!</span></h4>
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi debitis harum magni nemo numquam porro quas quia similique voluptatibus! Distinctio doloremque excepturi incidunt molestiae voluptate? Beatae reprehenderit sint velit.</span>
                 </div>
             </div>
             <div class="col-lg-4 offset-lg-3">
                 <div class="card shadow-sm">
                     <div class="card-header bg-primary">
-                        <h5 class="text-white mb-0">Fill the form</h5>
+                        <h5 class="text-white mb-0">Create a user account</h5>
                     </div>
                     <div class="card-body p-4">
-                        <form action="#" method="post">
+                        <form action="index.html" method="post">
                             <div class="form-row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label for="name">Name:</label>
-                                        <input type="text" class="form-control" placeholder="Enter your name" id="name">
+                                        <input type="text" class="form-control" placeholder="Enter your email" id="name">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label for="email">Email:</label>
                                         <input type="email" class="form-control" placeholder="Enter your email" id="email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="password">Password:</label>
+                                        <input type="password" class="form-control" placeholder="Enter your password" id="password">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="cPassword">Confirm Password:</label>
+                                        <input type="password" class="form-control" placeholder="Enter your password" id="cPassword">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
@@ -128,7 +140,10 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary w-100 mt-4">Send</button>
+                                        <button type="submit" id="loginBtn" class="btn btn-primary w-100 mt-4">
+                                            <span class="label">Sign Up</span>
+                                            <span class="loader fa fa-spinner fa-spin fa-pulse" style="display: none"></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -244,11 +259,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script>
-    $('ul.navbar-nav li.dropdown').hover(function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
-    }, function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+    $(document).ready(function () {
+        $('ul.navbar-nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+        }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+        });
+
+        $('#loginBtn .label').show();
+
+        $('#loginBtn').click(function () {
+            $('#loginBtn .label').hide();
+            $('#loginBtn .loader').show();
+        })
     });
+
 </script>
 </body>
 </html>

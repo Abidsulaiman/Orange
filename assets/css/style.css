@@ -139,6 +139,11 @@ a, a:hover{
     width: 250px;
 }
 
+.learn_more{
+    cursor: pointer;
+    color: var(--primary-color)!important;
+}
+
 .wh-primarybtn{
     padding: 1rem 3rem;
     border-radius: 1500px;
@@ -201,7 +206,7 @@ a, a:hover{
 
 .wh-header {
     display: block;
-    height: 780px;
+    padding-bottom: 50px;
     background: rgb(11, 11, 22) 74.2% ;
 }
 
@@ -405,6 +410,9 @@ ul li{
     opacity: .5;
 }
 
+footer a{
+    color: #fff!important;
+}
 footer h5{
     position: relative;
     padding-bottom: 20px;
