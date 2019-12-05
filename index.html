@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -11,7 +11,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
@@ -26,7 +26,7 @@
 
 <body>
 
-    <div class="wh-header transparent-bg" style="overflow: hidden">
+    <div class="wh-header transparent-bg">
         <div class="wh-topbar d-none d-lg-block">
             <div class="container">
                 <div class="row">
@@ -58,7 +58,7 @@
         <div class="wh-navbar">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><strong>ORANGE WEBHOSTING</strong></a>
+                    <a class="navbar-brand" href="index.html"><strong>ORANGE WEBHOSTING</strong></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -67,20 +67,20 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Pages
+                                    Web Hosting
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="sharedhosting.html">Shared Hosting</a>
                                 </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -95,7 +95,7 @@
                         <h1 class="text-uppercase">Premium hosting</h1>
                         <p>Share processes and data securely on a need to know basis without need for reconcilation it
                             combines a permission.</p>
-                        <a href="#" class="btn wh-primarybtn mr-lg-3">Get Started</a>
+                        <a href="#" class="btn wh-primarybtn mr-lg-3" data-target="#contactModal" data-toggle="modal">Get Started</a>
                         <a href="#" class="btn wh-primarybtn_outline">Know More</a>
                     </div>
                 </div>
@@ -493,7 +493,7 @@
     <!-- get-best-plan -->
     <section class="section" id="get-best-plan">
         <div class="container">
-            <div class="row pb-100">
+            <div class="row">
                 <div class="col-lg-6 v-centered">
                     <img src="assets/img/bestplan.svg" alt="" width="100%">
                 </div>
@@ -519,7 +519,7 @@
                     <a href="#" class="btn wh-primarybtn mt-4">Get Started</a>
                 </div>
             </div>
-            <div class="row pt-100 pb-100">
+            <div class="row">
                 <div class="col-lg-6 v-centered d-block d-lg-none d-xl-none">
                     <img src="assets/img/morepower.svg" alt="" width="100%">
                 </div>
@@ -546,11 +546,12 @@
         </div>
     </section>
 
-    <section class="section bg-dark">
+    <section class="section bg-dark" id="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h4 class="text-white">Testimonials</h4>
+                    <p class="text-white">We are the best hosting platform</p>
                 </div>
             </div>
             <div class="row">
@@ -775,7 +776,50 @@
     </footer>
 
 
-
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary align-items-center">
+                    <h5 class="modal-title text-white" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" id="name">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email" id="email">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-check pl-0">
+                                    <label class="check_container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum expedita sint
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary w-100 mt-4">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -818,6 +862,13 @@
             });
         });
     </script>
-</body>
 
+    <script>
+        $('ul.navbar-nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+        }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+        });
+    </script>
+</body>
 </html>

@@ -25,7 +25,7 @@
 
 <body>
 
-<div class="wh-header transparent-bg" style="overflow: hidden">
+<div class="wh-header transparent-bg">
     <div class="wh-topbar d-none d-lg-block">
         <div class="container">
             <div class="row">
@@ -57,7 +57,7 @@
     <div class="wh-navbar">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#"><strong>ORANGE WEBHOSTING</strong></a>
+                <a class="navbar-brand" href="index.html"><strong>ORANGE WEBHOSTING</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -66,20 +66,20 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Pages
+                                Web Hosting
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="sharedhosting.html">Shared Hosting</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -89,27 +89,27 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-7 v-centered">
-                <div class="header-caption ptb-100">
+                <div class="header-caption ptb-50">
                     <span>we provide</span>
                     <h1 class="text-uppercase">Shared hosting</h1>
                     <p>Share processes and data securely on a need to know basis without need for reconcilation it
                         combines a permission.</p>
-                    <a href="#" class="btn wh-primarybtn mr-lg-3">Get Started</a>
+                    <a href="#" class="btn wh-primarybtn mr-lg-3" data-toggle="modal" data-target="#contactModal">Get Started</a>
                     <a href="#" class="btn wh-primarybtn_outline">Know More</a>
                 </div>
             </div>
             <div class="col-lg-5 d-none d-lg-block">
-                <img src="assets/img/bg.png" width="100%" alt="">
+                <img src="assets/img/sharedheaderimg.png" class=" ptb-50 w-100" alt="">
             </div>
         </div>
     </div>
 </div>
 
-<div class="section">
+<div class="section bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <div class="section-title mt-5">
+                <div class="section-title">
                     <h4 class="main-title">OUR BEST <span class="text-primary">SHARED HOSTING PLAN</span></h4>
                     <p>We are the best hosting platform</p>
                 </div>
@@ -273,6 +273,81 @@
     </div>
 </div>
 
+<section class="section bg-dark" id="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h4 class="text-white">Testimonials</h4>
+                <p class="text-white">We are the best hosting platform</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="owl-review" class="owl-carousel">
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>You don't need any special markup. All you need is to wrap your divs(owl works with
+                                any type element) inside the container element</p>
+                            <div class="profile row">
+                                <div class="col-lg-3">
+                                    <img src="assets/img/review2.png" alt="hello" class="review-img rounded-circle"
+                                         style="width:100%">
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="review-profile text-left pl-4 pt-2">
+                                        <h6 class="mb-0">Dr Banner(Hulk)</h6>
+                                        <p>Scientist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>You don't need any special markup. All you need is to wrap your divs(owl works with
+                                any type element) inside the container element</p>
+                            <div class="profile row">
+                                <div class="col-lg-3">
+                                    <img src="assets/img/review1.png" alt="hello" class="review-img rounded-circle"
+                                         style="width:100%">
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="review-profile text-left pl-4 pt-2">
+                                        <h6 class="mb-0">Robert Drowney jr</h6>
+                                        <p>Robotics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>You don't need any special markup. All you need is to wrap your divs(owl works with
+                                any type element) inside the container element</p>
+                            <div class="profile row">
+                                <div class="col-lg-3">
+                                    <img src="assets/img/review3.png" alt="hello" class="review-img rounded-circle"
+                                         style="width:100%">
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="review-profile text-left pl-4 pt-2">
+                                        <h6 class="mb-0">Steven Rogers</h6>
+                                        <p>Robotics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="section" id="faq">
     <div class="container">
         <div class="row">
@@ -283,7 +358,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mb-4">
             <div class="col-lg-4">
                 <div class="card shadow border-0">
                     <div class="card-body p-4">
@@ -412,9 +487,95 @@
     </div>
 </footer>
 
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary align-items-center">
+                <h5 class="modal-title text-white" id="contactModalLabel">Contact Us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter your name" id="name">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" placeholder="Enter your email" id="email">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-check pl-0">
+                                <label class="check_container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum expedita sint
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary w-100 mt-4">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="assets/vendor/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('select').niceSelect();
+    });
+    $(document).ready(function () {
+        $('#client-logo').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoPlay: true,
+            lazyLoad: true,
+            responsive: {
+                600: {
+                    items: 5
+                }
+            }
+        });
+        $('#owl-review').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            lazyLoad: true,
+            center: true,
+            responsive: {
+                600: {
+                    items: 3
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    $('ul.navbar-nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+    });
+</script>
 </body>
 </html>

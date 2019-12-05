@@ -79,11 +79,7 @@
         padding-top: 50px;
     }
     #we-dont-compromise .floating-row {
-        position: relative;
-        width: auto;
-        bottom: auto;
-        left: auto;
-        transform: translateX(0);
+        margin-bottom: 0;
     }
     .no-js .owl-carousel, .owl-carousel.owl-loaded {
         display: flex;
