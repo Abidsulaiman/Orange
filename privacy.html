@@ -48,7 +48,7 @@
                 <div class="col-lg-6">
                     <ul class="top-right-menu">
                         <li><a href="register.html"> <i class="fas fa-user mr-2"></i> Sign Up</a></li>
-                        <li><a class="active" href="login.html"> <i class="fas fa-sign-in-alt mr-2"></i> Login</a></li>
+                        <li><a href="login.html"> <i class="fas fa-sign-in-alt mr-2"></i> Login</a></li>
                         <li><a href="contact.html"> <i class="fas fa-comment mr-2"></i> Support</a></li>
                     </ul>
                 </div>
@@ -75,6 +75,7 @@
                                data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Web Hosting
                             </a>
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="sharedhosting.html">Shared Hosting</a>
                                 <a class="dropdown-item" href="resellerhosting.html">Reseller Hosting</a>
@@ -93,56 +94,58 @@
 <div class="section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 v-centered">
+            <div class="col-lg-12 text-center">
                 <div class="section-title">
-                    <h4 class="main-title">Login <span class="text-primary">Here!</span></h4>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi debitis harum magni nemo numquam porro quas quia similique voluptatibus! Distinctio doloremque excepturi incidunt molestiae voluptate? Beatae reprehenderit sint velit.</span>
+                    <h4 class="main-title">Privacy <span class="text-primary">Policy</span></h4>
+                    <span>Updated at February, 2023</span>
                 </div>
             </div>
-            <div class="col-lg-4 offset-lg-3">
-                <div class="card shadow-sm">
-                    <div class="card-header bg-primary">
-                        <h5 class="text-white mb-0">Please enter your login credentials</h5>
-                    </div>
-                    <div class="card-body p-4">
-                        <form action="index.html" method="post">
-                            <div class="form-row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <label for="email">Email:</label>
-                                        <input type="email" class="form-control" placeholder="Enter your email" id="email">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <label for="password">Password:</label>
-                                        <input type="password" class="form-control" placeholder="Enter your password" id="password">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-check pl-0">
-                                        <label class="check_container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum expedita sint
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <button type="submit" id="loginBtn" class="btn btn-primary w-100 mt-4">
-                                            <span class="label">Sign in</span>
-                                            <span class="loader fa fa-spinner fa-spin fa-pulse" style="display: none"></span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <div class="disclosures-body">
+                    <ol>
+                        <li>
+                            <p>Acceptance of Terms</p>
+                            <ol>
+                                <li>("Orange WebHosting", "We") provides its Service (as defined below) to you
+                                    through
+                                    its web site located at <a href="index.html">Orange Web Hosting</a> (the
+                                    "Site"), application programming interface (the "API"), or any mobile
+                                    application
+                                    (the "Mobile App", together with the Site and the API, the "Application") that
+                                    Orange WebHosting
+                                    may offer from time to time, subject to this Terms of Service agreement ("TOS").
+                                    By
+                                    accepting this TOS or by accessing or using the Service or Site, you acknowledge
+                                    that you have read, understood, and agree to be bound by this TOS. If you are
+                                    entering into this TOS on behalf of a company, business or other legal entity,
+                                    you
+                                    represent that you have the authority to bind such entity and its affiliates to
+                                    this
+                                    TOS, in which case the terms "you" or "your" shall refer to such entity and its
+                                    affiliates. If you do not have such authority, or if you do not agree with this
+                                    TOS,
+                                    you must not accept this TOS and may not use the Service. Any actions you, or
+                                    any of
+                                    your employees, consultants, agents, representatives, and users take on the
+                                    Service
+                                    shall be deemed to have occurred on behalf of your legal entity.</li>
+                                <li>You can review the most current version of this TOS at any time at <a
+                                        href="index.html">Orange WebHosting</a>. If any term of
+                                    this
+                                    TOS is not acceptable to you, your only remedy is to stop accessing and using
+                                    the
+                                    Service.</li>
+                            </ol>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 
 <footer class="pt-100 pb-4 bg-dark">
@@ -249,21 +252,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $('ul.navbar-nav li.dropdown').hover(function () {
-            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
-        }, function () {
-            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
-        });
-
-        $('#loginBtn .label').show();
-
-        $('#loginBtn').click(function () {
-            $('#loginBtn .label').hide();
-            $('#loginBtn .loader').show();
-        })
+    $('ul.navbar-nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
     });
-
 </script>
 </body>
 </html>
